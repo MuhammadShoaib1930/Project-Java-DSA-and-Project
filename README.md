@@ -1,2 +1,2 @@
-# Project-Java-DSA-and-Project
+# ProjectJavaDSA_AndProject
 There we work in DSA and projects.
