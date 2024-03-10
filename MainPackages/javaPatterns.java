@@ -1,4 +1,4 @@
-package project;
+package MainPackages;
 
 public class javaPatterns {
 
@@ -174,4 +174,16 @@ class AdvancedPattern{
             System.out.println();
         }
     }
+}
+class ProblemsClass{
+    // Find the factorial of a number.
+    public long factorial(int n){
+        if(n==0 || n==1) return 1;
+        int solution = 1;
+        for(int i = 1; i<=n;i++){
+            solution*=i;
+        }
+        return solution;
+    }
+    
 }
