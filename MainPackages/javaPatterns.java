@@ -185,5 +185,13 @@ class ProblemsClass{
         }
         return solution;
     }
+    //Enter 3 
+    
+}
+public class ClassTest{
+    ClassTest(){
+        ProblemsClass obj = new ProblemsClass();
+        
+    }
     
 }
