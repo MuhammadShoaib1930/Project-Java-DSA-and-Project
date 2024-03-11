@@ -186,6 +186,7 @@ class ProblemsClass{
         return solution;
     }
     //Write a function that calculates the Greatest Common Divisor of 2 numbers.
+    //Write a function that calculates the Greatest Common Divisor of 2 numbers.
     public int  greatestCommonDivisor(int a, int b){
         return 0;
     }
