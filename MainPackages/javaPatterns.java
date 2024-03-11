@@ -185,10 +185,13 @@ class ProblemsClass{
         }
         return solution;
     }
-    //Enter 3 
+    //Write a function that calculates the Greatest Common Divisor of 2 numbers.
+    public int  greatestCommonDivisor(int a, int b){
+        return 0;
+    }
     
 }
-public class ClassTest{
+class ClassTest{
     ClassTest(){
         ProblemsClass obj = new ProblemsClass();
         
