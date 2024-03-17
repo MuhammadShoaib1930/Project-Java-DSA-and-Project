@@ -175,6 +175,9 @@ class AdvancedPattern{
         }
     }
 }
+class Searching{
+    
+}
 class ProblemsClass{
     // Find the factorial of a number.
     public long factorial(int n){
@@ -192,10 +195,52 @@ class ProblemsClass{
     }
     
 }
+class Sorting{
+    public void bubbleSort(int[] arr){
+        for(int i = 0; i<arr.length;i++){
+            for(int j = 1; j<arr.length-i;j++){
+                if(arr[j]<arr[j-1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1]= temp;
+                }
+            }
+        }
+    }
+    public void selectionSort(int[] arr){
+        for(int i = 0; i<arr.length;i++){
+            int smallValue = i;
+            for(int j = i+1; j<arr.length;j++){
+                if(arr[smallValue]>arr[j]){
+                    smallValue = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[smallValue];
+            arr[smallValue] = temp;
+        }
+    }
+    public void insertionSort(int[] arr){
+        for(int i  = 0; i<arr.length-1; i++){
+            int j = i+1;
+            while (j > 0 && arr[j]<arr[j-1]) {
+                int temp = arr[j-1];
+                arr[j-1]=arr[j];
+                arr[j]=temp;
+                j--; 
+            }
+        }
+    }
+}
 class ClassTest{
     ClassTest(){
-        ProblemsClass obj = new ProblemsClass();
-        
+        Sorting obj = new Sorting();
+        int[] arr={5,4,3,2,1};
+        obj.insertionSort(arr);
+        for(int i = 0;i<5;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
     }
     
 }
