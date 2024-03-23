@@ -176,7 +176,23 @@ class AdvancedPattern{
     }
 }
 class Searching{
-    //global
+    public int binarySearch(int[] arr, int left , int right,int key){
+        int mid = (left+right)/2;
+        while (left<=right) {
+            if(arr[mid] == key){
+                return mid;
+            }else if(arr[mid]>key){
+                right = mid;
+            }else if(arr[mid]<key){
+                left = mid;
+            }
+        }
+        return 0;
+    }
+    public int binarySearch(int[][] arr){
+
+        return 0;
+    }
 }
 class ProblemsClass{
     // Find the factorial of a number.
